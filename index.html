@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #b3c2c2;;
+            background-color: #1a1a1a;
+        }
+
+        header {
+            text-align: center;
+            padding: 5px 0;
+            margin-bottom: 8px;
+        }
+
+        .profile-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .round-image {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: fill;
+        }
+
+        .about-me {
+            width: 80%;
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 100px;
+        }
+        .skills a {
+            text-decoration: none;
+            color: #67b2b4;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
+        .skills a:hover {
+            color: #5b8d8f;
+            font-size: 19px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div>
+        {% include 'nav_bar.html'%}
+    </div>
+    <header>
+        <h1 style="font-size: 50px ;">Welcome </h1>
+    </header>
+
+    <section class="profile-image">
+        <div class="image-container">
+            <img src="./static/rohit.jpeg" alt="Round Image" class="round-image">
+        </div>
+    </section>
+
+    <section class="about-me">
+        <p class="about">
+            As a multifaceted engineer, I bridge the gap between intelligent systems and user-centric web experiences.
+            My expertise spans both Machine Learning (ML) and Web Development, allowing me to craft solutions that are
+            not only functionally robust but also intuitively engaging.
+
+            In the realm of ML, I leverage algorithms and statistical models to extract meaningful insights from data,
+            enabling predictive analytics, automation, and intelligent decision-making. I’m proficient in developing and
+            deploying ML models for diverse applications, from natural language processing and computer vision to
+            time-series forecasting and recommendation systems. My toolkit includes frameworks like TensorFlow, PyTorch,
+            and scikit-learn, and I'm adept at data preprocessing, feature engineering, and model evaluation.
+
+            On the web development front, I build responsive and dynamic web applications using modern technologies. My
+            skills encompass front-end development with HTML, CSS. I also possess strong back-end development capabilities with
+            languages like Python (Flask, Django) enabling me to design and implement scalable server-side
+            logic and database interactions.
+
+            By integrating my ML and web development skills, I can create intelligent web applications that provide
+            personalized experiences and solve complex problems. Whether it's building a recommendation engine for an
+            e-commerce platform or developing a data-driven dashboard for business insights, I strive to deliver
+            innovative and impactful solutions.
+        </p>
+    </section>
+
+    <hr style="width: 50%; border: 1px solid #fff7f7; margin: 20px auto;">
+    <div class =skills >
+        <a href="skill"> click for skills</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #b3c2c2;
+            background-color: #1a1a1a;
+            line-height: 1.6;
+        }
+        .skills{
+            margin-bottom: 9px;
+            border-bottom: 1px solid #444;
+        }
+        
+
+        .skills h3 {
+            color: #60b2c0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+
+        .skills div{ 
+            margin-bottom: 5px;
+        }
+         
+        
+
+
+        .hire-me {
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        button {
+            padding: 14px 30px;
+            background-color: #60b2c0;
+            color: white;
+            border: none;
+            border-radius: 25px; 
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600; 
+            transition: background-color 0.3s ease, transform 0.2s ease; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+        }
+
+        button:hover {
+            background-color: #4a95a2;
+            transform: translateY(-2px); 
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+        }
+
+        button:active {
+            transform: translateY(1px); 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        {% include 'nav_bar.html'%}
+    </div>
+
+    <section class="skills">
+        <h3>Works:</h3>
+        <p><div >
+            {% for skill in skills %}
+            {% include 'skill_title.html'%}
+            {% endfor %}
+            </div>
+        </p>
+    </section>
+
+    <section class="hire-me">
+        <a href="./form"><button>Contact me</button></a>
+    </section>
+</body>
+
+</html>
