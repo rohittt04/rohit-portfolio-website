@@ -1,12 +1,11 @@
 from flask import Flask, render_template
-
 app = Flask(__name__)
 
 SKILLS = [
     {
         "title": "Python",
         "about": "Experienced in web development and scripting.",
-        "exp": "3 years"
+        "exp": "2 years"
     },
     {
         "title": "JavaScript",
@@ -16,15 +15,14 @@ SKILLS = [
     {
         "title": "HTML/CSS",
         "about": "Skilled in creating responsive and visually appealing web pages.",
-        "exp": "4 years"
+        "exp": "1 years"
     },
     {
         "title": "JAVA",
         "about": "Skilled in creating responsive and visually appealing applications.",
-        "exp": "1 years"
+        "exp": "8 months"
     }
 ]
-
 
 
 @app.route('/')
@@ -42,4 +40,6 @@ def form():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)
+
+S
 
